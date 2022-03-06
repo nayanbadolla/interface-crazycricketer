@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="icon" type="image/x-icon" href="./InterfaceLogo.png">
+		<title>Crazy Cricketer</title>
+		<style>
+			* {
+				text-align: center;
+				box-sizing: border-box;
+				color: black;
+			}
+			
+			body {
+				overflow-x: hidden;
+				margin: 0px;
+				padding: 25px;
+				background-color: rgb(248, 233, 144);
+				/* background-color: rgb(3, 51, 141); */
+				/* background-color: rgba(40, 40, 40, 1.0); */
+				color: #DDDDDD;
+				font-family:Verdana, Geneva, Tahoma, sans-serif;
+				height: 100vh;
+				width: 100vw;
+			}
+			
+			#container{	
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: row;
+				height: 90%;
+			}
+
+			#container div {
+				padding: 20px;
+			}
+			
+			#log {
+				font-family: monospace;
+			}
+			
+			#form {
+				font-size: 19px;
+			}
+
+			#output {
+				padding: 10px;
+				background: #fffdba;
+				/* background: #AAAAAA; */
+				/* width: 200%; */
+				color: #171717;
+				border-radius: 10px;
+				font-size: 20px;
+			}
+
+			h1 {
+				margin: 0px;
+				padding-top: 30PX;
+			}
+
+			#cricketImg {
+				width: 700px;
+				height: 500px;
+			}
+
+			#rightDiv {
+				font-size: larger;
+			}
+
+			#subButton {
+				border-radius: 10px;
+				padding: 10px 50px;
+				font-size: 15px;
+				font-weight: bold;
+			}
+
+			#subButton:hover {
+				transform: scale(1.04);
+				background-color: rgb(186, 225, 255);
+				/* background-color: rgb(138, 133, 137); */
+				/* color: rgb(0, 0, 0); */
+			}
+
+			#question {
+				text-align: justify;
+			}
+
+			#center {
+				text-align: center;
+			}
+			
+			p {
+				text-align: left;
+			}
+			
+			#GHLogo {
+				height: 110px;
+			}
+		</style>
+
+		</head>
+
+	<body>
+		<!-- <br/><br/> -->
+		<img src="GiTH.JPG" id = "GHLogo" alt="GH Logo">
+		<h1>CRAZY CRICKETER</h1>
+		<div id="container">
+		<div id="leftDiv">
+			<!-- <br /> -->
+				<img id="cricketImg" src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y3JpY2tldHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="cricket" >
+		</div>
+		<div id="rightDiv">
+			<div id="question">
+				<b> 
+					<p>
+						The score card of a cricket game, denoting the runs scored per ball is recorded without leaving any spaces between numbers:
+					</p>
+					<!-- <br /> -->
+					<p id="center">
+						380171246010118910253641618239
+					</p>
+				</b>
+				<!-- <br /><br /> -->
+				<p>
+					Correct the score card if the total no of runs conceded from the four overs is: 166
+				</p>
+				<!-- <br/><br /> -->
+				<small>
+					<p>
+						(Note that the wides are added with the next valid ball (for example, a wide and then a six would be recorded as a 7).
+					</p>
+					<!-- <br/> -->
+					<p>
+						Also with a no-ball the runs are recorded as [runs in no-ball] + [runs in free hit] + [runs in wide] + [runs in the next valid ball]
+					</p>
+					<!-- <br /> -->
+					<p>
+						(for example, 1+6+4=11 if it's a dot no ball + a six in free hit + a boundary in the next ball)
+					</p>
+				</small>	
+			</div>
+			<!-- <br /><br /><br /> -->
+
+			<div id="log">
+				<div id="output">
+					Well Done! You got the answer! (one of them, at least)
+				</div>
+			</div><br />
+
+
+			<form action="../../flag-retriever/flag.php"><input type="hidden" name="teamname" value="bhavya" />
+				<input type="hidden" name="no" value="4" />
+				<input type="hidden" name="set" value="1" />
+				<input type="hidden" name="answer" value="srKJuIIuvKMNIuvHvIwtIHJwtwrJvPNLOtKLLJJNtILOHvLIvLwvvuLuIKQNwONu" />
+				<input id="subButton" type="submit" value="PROCEED" />
+			</form>
+		</div>
+		</div>
+	</body>
+</html>

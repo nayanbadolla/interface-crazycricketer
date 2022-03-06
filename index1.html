@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Crazy Cricketer | GiTH | Interface</title>
+	<style>
+		* {
+			margin-top: 10px;
+			box-sizing: border-box;
+		}
+
+		body {
+			background-color: rgb(3, 51, 141);
+			color: #DDDDDD;
+			font-family: sans-serif;
+		}
+
+		header {
+			font-family: 'Times New Roman', Times, serif;
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		header img {
+			width: 280px;
+			height: 150px;
+			/* border-radius: 75%; */
+		}
+
+		h1 {
+			padding-top: 50px;
+			text-align: center;
+		}
+
+		img {
+			width: 750px;
+			height: 475px;
+			padding-right: 50px;
+		}
+
+		#content {
+			display: flex;
+			padding: 0px 50px;
+		}
+
+		.score {
+			text-align: center;
+		}
+
+		#log {
+			font-family: monospace;
+			text-align: center;
+		}
+
+		#form {
+			font-size: 20px;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+
+		#output {
+			/* padding: 10px; */
+			background: #AAAAAA;
+			color: #171717;
+		}
+
+		#button {
+			padding: 0 5px;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<img src="Interface.png" alt="Interface">
+		<h1>CRAZY CRICKETER</h1>
+		<img src="GiTH.JPG" alt="GiTH">
+	</header>
+	<br/><br/>
+
+	<div id="content">
+		<img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1005&q=80" alt="cricket">
+
+		<div id="statement">
+			<div id="question">
+				<p>
+					The score card of a cricket game, denoting the runs scored per ball is recorded without leaving any spaces between numbers:
+				</p>
+				<p class="score">
+					380171246010118910253641618239
+				</p>
+				<p>
+					Correct the score card if the total no of runs conceded from the four overs is: 166
+				</p>
+				<small>(Note that wides are added with the next valid ball (for example, wide and then six would be recorded as a 7)). <br/>Also with a no-ball the runs are recorded as: <br>[runs in no-ball] + [runs in free hit] + [runs in wide] + [runs in the next valid ball] <br/>(for example, 1+6+4=11 if it's a dot no ball + a six in free hit + a boundary in the next ball)</small>
+			</div>
+			<br>
+
+			<div id="log">
+				Write your answer:
+			</div>
+
+			<div id="form">
+				<form method="post">
+					<table>
+					<tr>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+						<td><input type="text" name="box[]" size=2 /></td>
+					</tr>
+					</table><br/>
+					<input id="button" type="submit" value="Submit"/>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
